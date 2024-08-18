@@ -1,0 +1,94 @@
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    animation: fadeIn 1s ease-out;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #0088cc;
+    color: #fff;
+    animation: slideIn 1s ease-out;
+}
+
+h1 {
+    margin: 0;
+}
+
+.section {
+    margin-bottom: 20px;
+    animation: slideIn 1s ease-out;
+}
+
+h2 {
+    color: #0088cc;
+    border-bottom: 2px solid #0088cc;
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #0088cc;
+    color: #fff;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill {
+    background-color: #e6f3fa;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.skill:hover {
+    background-color: #ffa500;
+    color: #fff;
+    transform: scale(1.05);
+}
